@@ -1,18 +1,42 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Webpack App</title>
-<script defer src="bundle%20398b25d31943f29fe9e1.js"></script></head>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/dbf4a452b8.js" crossorigin="anonymous"></script>
+  <title>MicroPosts</title>
+<script defer src="bundle%20d64bdebd7006fd97e906.js"></script></head>
 <body>
-  <div class="container">
-    <h3>Don't Laugh Challenge</h3>
-    <img id="laughImg" alt="">
-     <div id="joke" class="joke"></div>
-     <button id="jokeBtn" class="btn">Get another Joke</button>
+  <nav class="navbar navbar-dark bg-primary mb-3">
+    <div class="container">
+      <a href="#" class="navbar-brand">MicroPosts</a>
+    </div>
+  </nav>
+
+  <div class="container postsContainer">
+    <div class="card card-body card-form">
+      <h1>Say Something</h1>
+      <p class="lead">What's on your mind?</p>
+      <div class="form-group">
+        <input type="text" id="title" class="form-control" placeholder="Post Title">
+      </div>
+      <div class="form-group">
+        <textarea id="body" class="form-control" placeholder="Post Body"></textarea>
+      </div>
+      <input type="hidden" id="id" value="">
+      <button class="post-submit btn btn-primary btn-block">Post It</button>
+      <span class="form-end"></span>
+    </div>
+    <br>
+    <div id="posts"></div>
   </div>
+
+  <footer class="mt-5 p-3 text-center bg-light">
+    MicroPosts @copy;
+  </footer>
+  
+  
 </body>
 </html>
